@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build and Test'){
             steps{
-                sh 'docker build . -t rohit7899/node-todo-test:latest'
+                sh 'sudo docker build -t rohit7899/node-todo-test:latest .'
             }
         }
         stage('Push'){
